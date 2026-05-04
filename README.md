@@ -129,43 +129,13 @@ Two RBA monetary policy scenarios modelled using SARIMAX with cash rate as exoge
 | scipy | Spline smoothing for trend estimation |
 | matplotlib / seaborn | Visualisation |
 
----
-
-## How to Run
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/zulsinar031/australia-unemployment-forecasting.git
-cd australia-unemployment-forecasting
-```
-
-### 2. Install dependencies
-```bash
-pip install pandas numpy matplotlib seaborn statsmodels scikit-learn scipy openpyxl
-```
-
-### 3. Add data files
-Place the following ABS/RBA Excel files in a `data/` folder:
-- `6202006.xlsx` — ABS Labour Force (unemployment)
-- `640101.xlsx` — ABS CPI
-- `f01d.xlsx` — RBA Cash Rate (daily)
-
-These are publicly available from the ABS and RBA websites.
-
-### 4. Run the notebook
-```bash
-jupyter notebook unemployment_forecasting.ipynb
-```
-
----
 
 ## Project Structure
 
 ```
 australia-unemployment-forecasting/
 ├── unemployment_forecasting.ipynb  ← Full analysis (all tasks)
-├── data/                           ← ABS + RBA source files (not committed)
-├── requirements.txt
+├── dataset/                           ← ABS + RBA source files (not committed)
 └── README.md
 ```
 
